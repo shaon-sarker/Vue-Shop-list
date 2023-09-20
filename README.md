@@ -8,7 +8,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ## Live Website
 
-See [Vite Shop Webiste](https://vitejs.dev/config/).
+See [Live Shop Webiste](https://vue-shopweb.netlify.app/).
 
 ## Project Setup
 

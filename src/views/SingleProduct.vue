@@ -15,7 +15,7 @@ onMounted(featchSingleProduct)
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-4">
-      <img :src=singleproduct.image class="card-img-top img-thumbnail shadow-lg p-3 mb-5 bg-body-tertiary rounded" alt="...">
+      <img :src=singleproduct.thumbnail class="card-img-top img-thumbnail shadow-lg p-3 mb-5 bg-body-tertiary rounded" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card shadow-lg p-3 mb-5 bg-body-tertiary rounded" style="width: 50rem;">

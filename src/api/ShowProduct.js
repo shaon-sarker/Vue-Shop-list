@@ -7,16 +7,14 @@ export default function getproductbyapi(id)
     const singleproduct = ref([])
 
     const featchProductData = async () =>{
-    let response = await axios.get('http://127.0.0.1:8000/api/v1/products')
-    products.value = response.data.data
-    // https://fakestoreapi.com/products
+    let response = await axios.get('https://dummyjson.com/products?limit=28')
+    products.value = response.data.products
     }
 
     const featchSingleProduct = async () =>{
-        let response = await axios.get(`http://127.0.0.1:8000/api/v1/products/${id}`)
-        singleproduct.value = response.data.data
+        let response = await fetch(`https://dummyjson.com/products/${id}`)
+        singleproduct.value = await response.json()
         }
-
     return{
         products,
         singleproduct,
